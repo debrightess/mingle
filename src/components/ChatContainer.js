@@ -1,8 +1,22 @@
+import ChatHeader from "./ChatHeader";
+import ChatDisplay from "./ChatDisplay";
+import MatchesDisplay from "./MatchesDisplay";
 
 const ChatContainer = () => {
   return (
-    <div>ChatContainer</div>
-  )
-}
+    <div className="chat-container">
+      <ChatHeader />
 
-export default ChatContainer 
+      <div>
+        <button className="option">Matches</button>
+        <button className="option">Chat</button>
+      </div>
+
+      <MatchesDisplay />
+
+      <ChatDisplay />
+    </div>
+  );
+};
+
+export default ChatContainer;
